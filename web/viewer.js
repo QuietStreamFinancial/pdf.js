@@ -1670,7 +1670,7 @@ var PDFViewerApplication = {
 exports.PDFViewerApplication = PDFViewerApplication;
 var validateFileURL;
 {
-  var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+  // var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
 
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
@@ -1680,9 +1680,10 @@ var validateFileURL;
     try {
       var viewerOrigin = new _pdfjsLib.URL(window.location.href).origin || 'null';
 
-      if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
-        return;
-      }
+      return;
+      // if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
+      //    return;
+      // }
 
       var _ref7 = new _pdfjsLib.URL(file, window.location.href),
           origin = _ref7.origin,
