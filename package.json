@@ -1,5 +1,5 @@
 {
-  "name": "pdfjs-deploy",
+  "name": "pdf.js",
   "version": "1.0.0",
   "description": "pdf.js gh-pages for deploy",
   "main": "build/pdf.js",
