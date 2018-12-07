@@ -1,0 +1,9 @@
+{
+  "name": "pdfjs-deploy",
+  "version": "1.0.0",
+  "description": "pdf.js gh-pages for deploy",
+  "main": "build/pdf.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
